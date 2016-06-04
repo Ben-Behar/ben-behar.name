@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def portal
-  	render text: "Hello there!  This will eventually be my personal/professional webpage."
+  	render text: "Hello there!  This will eventually be my personal/professional webpage.  I am currently testing homebrewed continuous deployment!"
   end
 end
