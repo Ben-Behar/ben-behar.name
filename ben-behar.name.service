@@ -1,0 +1,14 @@
+[Unit]
+Description=Public Facing WebService @ ben-behar.name
+Requires=network.target
+#Requires=git.ben-behar.name.service
+
+[Service]
+WorkingDirectory=/srv/ben-behar.name/
+#Environment="JAR=/srv/minecraft/forge-1.7.10-10.13.4.1614-1.7.10-universal.jar" "FIFO=/srv/minecraft/fifo"
+ExecStart=/bin/bash -lc "bundle exec rails server -e production --bind 0.0.0.0 --port 80 &> /srv/ben-behar.name/log/production.log"
+TimeoutStopSec=100
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
