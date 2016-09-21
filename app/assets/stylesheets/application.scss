@@ -1,0 +1,46 @@
+@import "bootstrap";
+@import "font-awesome";
+
+html,body
+{
+  height: 100%;
+}
+
+#page
+{
+  height: 100%;
+}
+
+.row{
+  height: 50%;
+}
+
+.sqr{
+  height: 100%;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.middle{
+  position: absolute;               
+  top: 50%;
+  left: 50%;            
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#facebook {
+  background-color: #3498db;
+}
+
+#github {
+  background-color: #f1c40f;
+}
+
+#linkedin {
+  background-color: #2ecc71;
+}
+
+#resume {
+  background-color: #7f8c8d;
+}
