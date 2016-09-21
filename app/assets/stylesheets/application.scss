@@ -29,6 +29,17 @@ html,body
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+#face-frame{
+  border-radius: 100%;
+  background-color: white;
+  padding: .5%; 
+}
+
+.face{
+  border-radius: 100%;
+}
+
 #facebook {
   background-color: #3498db;
 }
