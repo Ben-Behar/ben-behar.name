@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'application#portal'
   get 'resume' => 'application#resume'
+  get 'farming-valley' => 'application#client'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
